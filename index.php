@@ -1,4 +1,4 @@
-<?php
+H<?php
 // Отправляем браузеру правильную кодировку,
 // файл index.php должен быть в кодировке UTF-8 без BOM.
 header('Content-Type: text/html; charset=UTF-8');
@@ -113,7 +113,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'GET') {
   // ранее в сессию записан факт успешного логина.
   if (!empty($_COOKIE[session_name()]) && session_start() && !empty($_SESSION['login'])) {
 
-    $conn = new mysqli('localhost','u54050','3461364','u54050');
+    $conn = new mysqli('localhost','u52980','7655906','u52980');
     $login = $_SESSION['login'];
     $query = $conn->query("SELECT * FROM users WHERE login = '$login' LIMIT 1");
     $result = mysqli_fetch_assoc($query);
@@ -284,7 +284,7 @@ else {
   // Проверяем меняются ли ранее сохраненные данные или отправляются новые.
   if (!empty($_COOKIE[session_name()]) && session_start() && !empty($_SESSION['login'])) {
     $login = $_SESSION['login'];
-    $conn = new mysqli('localhost','u54050','3461364','u54050');
+    $conn = new mysqli('localhost','u52980','7655906','u52980');
     $query = $conn->query("SELECT * FROM users WHERE login = '$login' LIMIT 1");
     $result = mysqli_fetch_assoc($query);
     $user_id = $result['id'];
@@ -324,7 +324,7 @@ else {
     setcookie('login', $login);
     setcookie('pass', $pass);
 
-    $conn = new mysqli('localhost','u54050','3461364','u54050');
+    $conn = new mysqli('localhost','u52980','7655906','u52980');
     if ($conn->connect_error) {
       die('Connection failed: ' . $conn->connect_error);
     } else {
