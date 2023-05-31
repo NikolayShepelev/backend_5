@@ -29,7 +29,7 @@
                 </thead>
                 <tbody>
                     <?php
-                    $conn = new mysqli('localhost','u54050','3461364','u54050');
+                    $conn = new mysqli('localhost','u52980','7655906','u52980');
                     $query = "SELECT * FROM superpowers";
                     $query_run = mysqli_query($conn, $query);
                     foreach ($query_run as $row) {
@@ -58,7 +58,7 @@
                         </thead>
                         <tbody>
                             <?php
-                            $conn = new mysqli('localhost','u54050','3461364','u54050');
+                            $conn = new mysqli('localhost','u52980','7655906','u52980');
                             $query = "SELECT * FROM user_superpowers";
                             $query_run = mysqli_query($conn, $query);
                             foreach ($query_run as $row) {
@@ -94,7 +94,7 @@
                         </thead>
                         <tbody>
                             <?php
-                            $conn = new mysqli('localhost','u54050','3461364','u54050');
+                            $conn = new mysqli('localhost','u52980','7655906','u52980');
                             $query = "SELECT * FROM users";
                             $query_run = mysqli_query($conn, $query);
                             foreach ($query_run as $row) {
