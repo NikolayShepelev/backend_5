@@ -134,7 +134,7 @@ else {
 
   // Проверяем есть ли такой логин и пароль в базе данных.
   // Выдаём сообщение об ошибках.
-  $conn = new mysqli('localhost','u54050','3461364','u54050');
+  $conn = new mysqli('localhost','u52980','7655906','u52980');
   $result = $conn->query("SELECT * FROM users WHERE login = '$login' LIMIT 1");
   $count = mysqli_num_rows($result);
 
